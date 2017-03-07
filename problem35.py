@@ -35,8 +35,11 @@ def is_circular_prime(n):
 
 
 if __name__ == '__main__':
+
     count = 0
     for n in xrange(2, int(1e6)):
         if is_circular_prime(n):
             count += 1
+
+    assert count == 55
     print count

@@ -48,4 +48,7 @@ def is_sum_of_abundants(n):
 
 if __name__ == '__main__':
     numbers = xrange(upper_limit + 1)
-    print sum(n for n in numbers if not is_sum_of_abundants(n))
+    answer = sum(n for n in numbers if not is_sum_of_abundants(n))
+
+    assert answer == 4179871
+    print answer

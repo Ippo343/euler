@@ -6,13 +6,12 @@ Answer:
     233168
 """
 
-
 import itertools
+
 from utilities import lower_than
 
-
-LIMIT=1000
-ANSWER=233168
+LIMIT = 1000
+ANSWER = 233168
 
 
 def multiples(n):
@@ -20,7 +19,8 @@ def multiples(n):
     Yields all the multiples of n (to infinity)
     """
     for i in itertools.count(start=1):
-        yield i*n
+        yield i * n
+
 
 threes = itertools.takewhile(lower_than(LIMIT), multiples(3))
 fives = itertools.takewhile(lower_than(LIMIT), multiples(5))
@@ -31,4 +31,3 @@ answer = sum(set(itertools.chain(threes, fives)))
 assert answer == ANSWER
 
 print answer
-

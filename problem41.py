@@ -41,5 +41,6 @@ if __name__ == '__main__':
     for n in candidate_n:
         p = largest_pandigital_prime(n)
         if p:
+            assert p == 7652413
             print p
             break

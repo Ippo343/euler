@@ -47,4 +47,5 @@ if __name__ == '__main__':
         remove_value(digits_preceding, first)
         solution += first
 
+    assert solution == '73162890'
     print solution

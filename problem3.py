@@ -20,4 +20,5 @@ for p in itertools.takewhile(lower_than(limit), primes()):
     if not number % p:
         answer = p
 
+assert answer == 6857
 print answer

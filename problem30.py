@@ -37,4 +37,7 @@ if __name__ == '__main__':
             solutions.add(n)
 
     print solutions
-    print sum(solutions)
+    answer = sum(solutions)
+
+    assert answer == 443839
+    print answer
